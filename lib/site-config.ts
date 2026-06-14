@@ -41,6 +41,7 @@ Sitemap: ${SITE_CONFIG.url}/sitemap.xml
 
 export function getSitemapXml() {
   return `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${SITE_CONFIG.url}/</loc>
@@ -48,6 +49,5 @@ export function getSitemapXml() {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-</urlset>
-`;
+</urlset>`;
 }
