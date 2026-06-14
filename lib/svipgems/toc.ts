@@ -1,0 +1,18 @@
+export const TABLE_OF_CONTENTS = [
+  { href: "#overview-heading", label: "Overview" },
+  { href: "#introduction-heading", label: "Introduction" },
+  { href: "#what-is-heading", label: "What is svip gems Game?" },
+  { href: "#registration-login-heading", label: "svip gems Registration and Login Process" },
+  { href: "#key-features-heading", label: "Key Features of svip gems Game" },
+  { href: "#additional-features-heading", label: "Additional Features" },
+  { href: "#popular-games-heading", label: "Popular Games to Play on svip gems" },
+  { href: "#screenshots-heading", label: "SVIP Gems App Screenshots" },
+  { href: "#download-install-heading", label: "Guide for Download and Install svip gems APK" },
+  { href: "#deposit-withdraw-heading", label: "Deposit and Withdraw Steps" },
+  { href: "#why-choose-heading", label: "Why Choose svip gems Game in Pakistan?" },
+  { href: "#referral-heading", label: "Earn More With svip gems Referral Program" },
+  { href: "#safe-legal-heading", label: "Is svip gems Safe and Legal?" },
+  { href: "#pros-cons-heading", label: "Pros and Cons" },
+  { href: "#conclusion-heading", label: "Conclusion" },
+  { href: "#faq-heading", label: "FAQs" },
+] as const;
