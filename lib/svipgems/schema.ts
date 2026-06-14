@@ -8,7 +8,7 @@ import { CANONICAL_URL, DOWNLOAD_URL, SITE_CONFIG } from "@/lib/site-config";
 import { getSchemaScreenshots, OG_IMAGE } from "@/lib/svipgems/images";
 import { SITE_METADATA } from "@/lib/svipgems/metadata";
 
-const PAGE_ID = `${CANONICAL_URL}/#webpage`;
+const PAGE_ID = `${SITE_CONFIG.url}/#webpage`;
 const ORG_ID = `${SITE_CONFIG.url}/#organization`;
 
 function getImageObject() {
