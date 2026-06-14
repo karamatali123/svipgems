@@ -15,7 +15,6 @@ import { WhyChooseSection } from "@/components/svipgems/article/WhyChooseSection
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
 import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { HeroSection } from "@/components/svipgems/HeroSection";
-import { JsonLd } from "@/components/svipgems/JsonLd";
 import { ScreenshotsSection } from "@/components/svipgems/ScreenshotsSection";
 import { SiteFooter } from "@/components/svipgems/SiteFooter";
 import { SiteHeader } from "@/components/svipgems/SiteHeader";
@@ -26,9 +25,7 @@ export const metadata = homePageMetadata;
 
 export default function HomePage() {
   return (
-    <>
-      <JsonLd />
-      <div className="min-h-full bg-slate-950 text-slate-100">
+    <div className="min-h-full bg-slate-950 text-slate-100">
         <SiteHeader />
         <main id="main-content">
           <HeroSection />
@@ -67,6 +64,5 @@ export default function HomePage() {
         </main>
         <SiteFooter />
       </div>
-    </>
   );
 }

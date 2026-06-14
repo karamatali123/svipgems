@@ -120,6 +120,7 @@ export function getFaqPageSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${CANONICAL_URL}#faq`,
     mainEntity: ARTICLE_FAQS.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -177,16 +178,24 @@ export function getWebSiteSchema() {
   };
 }
 
-export function getAllSchemas() {
-  return [
-    { id: "webpage", data: getWebPageSchema() },
-    { id: "article", data: getArticleSchema() },
-    { id: "software", data: getSoftwareApplicationSchema() },
-    { id: "howto-download", data: getDownloadHowToSchema() },
-    { id: "howto-register", data: getRegistrationHowToSchema() },
-    { id: "faq", data: getFaqPageSchema() },
-    { id: "organization", data: getOrganizationSchema() },
-    { id: "breadcrumb", data: getBreadcrumbSchema() },
-    { id: "website", data: getWebSiteSchema() },
-  ];
+function stripSchemaContext<T extends { "@context"?: string }>(schema: T) {
+  const { "@context": _context, ...rest } = schema;
+  return rest;
+}
+
+export function getStructuredDataGraph() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      stripSchemaContext(getWebPageSchema()),
+      stripSchemaContext(getArticleSchema()),
+      stripSchemaContext(getSoftwareApplicationSchema()),
+      stripSchemaContext(getDownloadHowToSchema()),
+      stripSchemaContext(getRegistrationHowToSchema()),
+      stripSchemaContext(getFaqPageSchema()),
+      stripSchemaContext(getOrganizationSchema()),
+      stripSchemaContext(getBreadcrumbSchema()),
+      stripSchemaContext(getWebSiteSchema()),
+    ],
+  };
 }
