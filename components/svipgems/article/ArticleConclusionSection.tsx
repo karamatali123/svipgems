@@ -10,7 +10,11 @@ export function ArticleConclusionSection() {
       className="border-y border-white/10 bg-slate-900/30 py-14 md:py-16"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <SectionHeading id="conclusion-heading" title="Conclusion" />
+        <SectionHeading
+          id="conclusion-heading"
+          title="Conclusion"
+          subtitle="Final thoughts on whether SVIP Gems is worth trying in Pakistan."
+        />
         <ArticleProse paragraphs={CONCLUSION} />
       </div>
     </section>

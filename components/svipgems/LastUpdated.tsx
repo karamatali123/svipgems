@@ -6,9 +6,9 @@ type LastUpdatedProps = {
 
 export function LastUpdated({ className = "" }: LastUpdatedProps) {
   return (
-    <p className={`text-sm text-slate-500 ${className}`}>
+    <span className={`block text-sm text-slate-500 ${className}`.trim()}>
       Last updated:{" "}
       <time dateTime={SITE_CONFIG.dateModified}>{getLastUpdatedLabel()}</time>
-    </p>
+    </span>
   );
 }

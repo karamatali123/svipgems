@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { REAL_OR_FAKE } from "@/lib/svipgems/content";
 import { SectionHeading } from "@/components/svipgems/SectionHeading";
 
@@ -47,7 +48,10 @@ export function RealOrFakeSection() {
           className="mt-8 rounded-xl border border-white/10 bg-slate-950/60 p-6 text-sm leading-relaxed text-slate-400 md:text-base"
         >
           <strong className="font-semibold text-white">Note:</strong> Real-money app, not
-          regulated. No guaranteed income. Only use money you can afford to lose.
+          regulated. No guaranteed income. Only use money you can afford to lose.{" "}
+          <Link href="/review" className="font-medium text-amber-400 hover:text-amber-300">
+            Read the full SVIP Gems review →
+          </Link>
         </aside>
       </div>
     </section>

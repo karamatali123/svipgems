@@ -12,13 +12,19 @@ import { RegistrationLoginSection } from "@/components/svipgems/article/Registra
 import { SafeLegalSection } from "@/components/svipgems/article/SafeLegalSection";
 import { WhatIsGameSection } from "@/components/svipgems/article/WhatIsGameSection";
 import { WhyChooseSection } from "@/components/svipgems/article/WhyChooseSection";
+import { BonusesSection } from "@/components/svipgems/BonusesSection";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
 import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { HeroSection } from "@/components/svipgems/HeroSection";
+import { GuideHubSection } from "@/components/svipgems/GuideHubSection";
+import { HowItWorksSection } from "@/components/svipgems/HowItWorksSection";
+import { QuickInfoTable } from "@/components/svipgems/QuickInfoTable";
+import { RealOrFakeSection } from "@/components/svipgems/RealOrFakeSection";
 import { ScreenshotsSection } from "@/components/svipgems/ScreenshotsSection";
 import { SiteFooter } from "@/components/svipgems/SiteFooter";
 import { SiteHeader } from "@/components/svipgems/SiteHeader";
 import { TableOfContentsAccordion } from "@/components/svipgems/TableOfContentsAccordion";
+import { UserReviewsSection } from "@/components/svipgems/UserReviewsSection";
 import { homePageMetadata } from "@/lib/svipgems/metadata";
 
 export const metadata = homePageMetadata;
@@ -26,43 +32,52 @@ export const metadata = homePageMetadata;
 export default function HomePage() {
   return (
     <div className="min-h-full bg-slate-950 text-slate-100">
-        <SiteHeader />
-        <main id="main-content">
+      <SiteHeader />
+      <main id="main-content">
+        <article itemScope itemType="https://schema.org/Article">
+          <meta itemProp="headline" content="SVIP Gems Game Download APK (2026) – Login, Withdrawal & Review Pakistan" />
           <HeroSection />
           <TableOfContentsAccordion />
           <OverviewIntroductionSection />
+          <GuideHubSection />
+          <QuickInfoTable />
           <WhatIsGameSection />
+          <HowItWorksSection />
+          <DownloadInstallSection />
           <RegistrationLoginSection />
+          <DepositWithdrawArticleSection />
           <KeyFeaturesSection />
           <AdditionalFeaturesSection />
           <PopularGamesArticleSection />
-          <ScreenshotsSection />
-          <DownloadInstallSection />
-          <DepositWithdrawArticleSection />
-          <WhyChooseSection />
+          <BonusesSection />
           <ReferralProgramSection />
+          <ScreenshotsSection />
+          <WhyChooseSection />
+          <RealOrFakeSection />
+          <UserReviewsSection />
           <SafeLegalSection />
           <ProsConsSection />
           <ArticleConclusionSection />
           <ArticleFaqSection />
-          <section
-            aria-label="Call to action"
-            className="border-y border-amber-400/20 bg-gradient-to-r from-indigo-950/80 to-slate-950 py-12"
-          >
-            <div className="mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
-              <h2 className="text-2xl font-bold text-white md:text-3xl">
-                Ready to Download SVIP Gems?
-              </h2>
-              <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-400">
-                If you are ready to try this earning app, grab the official APK, register with
-                your mobile number, and start with a small Easypaisa or JazzCash deposit.
-              </p>
-              <CTAButtons className="mt-6 justify-center" size="large" />
-            </div>
-          </section>
-          <DisclaimerSection />
-        </main>
-        <SiteFooter />
-      </div>
+        </article>
+        <section
+          aria-label="Call to action"
+          className="border-y border-amber-400/20 bg-gradient-to-r from-indigo-950/80 to-slate-950 py-12"
+        >
+          <div className="mx-auto flex max-w-6xl flex-col items-center px-4 text-center md:px-6">
+            <h2 className="text-2xl font-bold text-white md:text-3xl">
+              Ready to Download SVIP Gems APK?
+            </h2>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-slate-400">
+              Download the official APK, register with your mobile number, and start with a
+              small Easypaisa or JazzCash test deposit.
+            </p>
+            <CTAButtons className="mt-6 justify-center" size="large" />
+          </div>
+        </section>
+        <DisclaimerSection />
+      </main>
+      <SiteFooter />
+    </div>
   );
 }

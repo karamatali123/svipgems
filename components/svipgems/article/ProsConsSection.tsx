@@ -5,7 +5,11 @@ export function ProsConsSection() {
   return (
     <section aria-labelledby="pros-cons-heading" className="py-14 md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <SectionHeading id="pros-cons-heading" title="Pros and Cons" />
+        <SectionHeading
+          id="pros-cons-heading"
+          title="SVIP Gems Pros and Cons Summary"
+          subtitle="A quick comparison to help you decide if the app is right for you."
+        />
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h3 className="text-lg font-bold text-emerald-300 md:text-xl">Pros</h3>

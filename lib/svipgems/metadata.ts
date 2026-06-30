@@ -24,7 +24,7 @@ export const SITE_METADATA = {
   title:
     "SVIP Gems Game Download APK (2026) – Login, Withdrawal & Review Pakistan",
   description:
-    "Download SVIP Gems APK for Android. Pakistan guide for login, Easypaisa & JazzCash withdrawal, bonus 2026, user reviews, real or fake analysis, and FAQ.",
+    "Complete SVIP Gems APK guide for Pakistan: download, login, Easypaisa & JazzCash withdrawal, bonus 2026, user reviews, real or fake analysis, and 18 FAQs.",
   keywords: [
     "SVIP Gems",
     "SVIP Gems Game Download APK",
@@ -39,13 +39,18 @@ export const SITE_METADATA = {
     "SVIP Gems Pakistan",
     "SVIP Gems customer care",
     "SVIP Gems minimum withdrawal",
+    "SVIP Gems not working",
+    "SVIP Gems referral",
+    "SVIP Gems download",
   ],
-  ogTitle: "SVIP Gems Game Download APK (2026) – Official Pakistan Guide",
+  ogTitle:
+    "SVIP Gems Game Download APK (2026) – Login, Withdrawal & Review Pakistan",
   ogDescription:
-    "SVIP Gems APK download, login, Easypaisa & JazzCash withdrawal, bonuses, and honest Pakistan reviews for Android users.",
-  twitterTitle: "SVIP Gems Download APK 2026 – Pakistan Guide",
+    "Download SVIP Gems APK for Android. Pakistan guide for login, Easypaisa & JazzCash withdrawal, bonuses, user reviews, and real or fake analysis.",
+  twitterTitle:
+    "SVIP Gems Download APK 2026 – Login, Withdrawal & Review Pakistan",
   twitterDescription:
-    "Complete SVIP Gems guide: APK download, login, Easypaisa withdrawal, JazzCash, bonuses & user reviews.",
+    "Complete SVIP Gems guide: APK download, login, Easypaisa withdrawal, JazzCash, bonuses, user reviews & real or fake analysis.",
 } as const;
 
 export const rootLayoutMetadata: Metadata = {

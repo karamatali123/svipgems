@@ -8,7 +8,11 @@ export function AdditionalFeaturesSection() {
       className="border-y border-white/10 bg-slate-900/30 py-14 md:py-16"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <SectionHeading id="additional-features-heading" title="Additional Features" />
+        <SectionHeading
+          id="additional-features-heading"
+          title="Additional SVIP Gems Features"
+          subtitle="Extra tools and perks available inside the app beyond the core game lobby."
+        />
         <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {ADDITIONAL_FEATURES.map((feature) => (
             <li

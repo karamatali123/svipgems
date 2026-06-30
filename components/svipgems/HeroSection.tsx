@@ -21,7 +21,7 @@ export function HeroSection() {
             id="hero-heading"
             className="text-3xl font-extrabold leading-tight tracking-tight text-white md:text-4xl lg:text-5xl"
           >
-            SVIP Gems Game Download APK (2026) – Official Pakistan Guide
+            SVIP Gems Game Download APK (2026) – Login, Withdrawal & Review Pakistan
           </h1>
           <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-lg">
             {HERO_INTRO}

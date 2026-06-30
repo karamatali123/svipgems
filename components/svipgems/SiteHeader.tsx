@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
+import { GUIDE_PAGES } from "@/lib/svipgems/pages";
 
 export function SiteHeader() {
   return (
@@ -12,19 +13,16 @@ export function SiteHeader() {
         >
           SVIP <span className="text-white">Gems</span>
         </Link>
-        <nav aria-label="Primary navigation" className="hidden items-center gap-6 md:flex">
-          <a href="#download-install-heading" className="text-sm text-slate-300 transition hover:text-white">
-            Download
-          </a>
-          <a href="#deposit-withdraw-heading" className="text-sm text-slate-300 transition hover:text-white">
-            Withdrawal
-          </a>
-          <a href="#referral-heading" className="text-sm text-slate-300 transition hover:text-white">
-            Referral
-          </a>
-          <a href="#faq-heading" className="text-sm text-slate-300 transition hover:text-white">
-            FAQ
-          </a>
+        <nav aria-label="Primary navigation" className="hidden items-center gap-5 lg:flex">
+          {GUIDE_PAGES.map((page) => (
+            <Link
+              key={page.path}
+              href={page.path}
+              className="text-sm text-slate-300 transition hover:text-white"
+            >
+              {page.shortLabel}
+            </Link>
+          ))}
         </nav>
         <div className="hidden sm:block">
           <CTAButtons size="default" />

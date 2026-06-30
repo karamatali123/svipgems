@@ -8,7 +8,8 @@ export function ReferralProgramSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="referral-heading"
-          title="Earn More With svip gems Referral Program"
+          title="SVIP Gems Referral Program"
+          subtitle="How to earn commission by inviting friends to register and play."
         />
         <ArticleProse paragraphs={REFERRAL_INTRO} className="mb-6" />
         <ul className="max-w-3xl space-y-5 text-slate-300 md:text-base">

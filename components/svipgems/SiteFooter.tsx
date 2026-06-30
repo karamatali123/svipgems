@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { DISCLAIMER } from "@/lib/svipgems/article-content";
 import { LastUpdated } from "@/components/svipgems/LastUpdated";
+import { GUIDE_PAGES } from "@/lib/svipgems/pages";
 import { DOWNLOAD_URL } from "@/lib/site-config";
 
 export function SiteFooter() {
@@ -16,7 +17,7 @@ export function SiteFooter() {
           </div>
           <nav aria-label="Footer navigation">
             <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-300">
-              Quick Links
+              Guide Pages
             </p>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>
@@ -24,6 +25,13 @@ export function SiteFooter() {
                   Homepage
                 </Link>
               </li>
+              {GUIDE_PAGES.map((page) => (
+                <li key={page.path}>
+                  <Link href={page.path} className="transition hover:text-amber-400">
+                    {page.label}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <a
                   href={DOWNLOAD_URL}
@@ -32,21 +40,6 @@ export function SiteFooter() {
                   className="transition hover:text-amber-400"
                 >
                   Download APK
-                </a>
-              </li>
-              <li>
-                <a href="#safe-legal-heading" className="transition hover:text-amber-400">
-                  Safe and Legal
-                </a>
-              </li>
-              <li>
-                <a href="#pros-cons-heading" className="transition hover:text-amber-400">
-                  Pros and Cons
-                </a>
-              </li>
-              <li>
-                <a href="#faq-heading" className="transition hover:text-amber-400">
-                  FAQ
                 </a>
               </li>
             </ul>
@@ -58,12 +51,10 @@ export function SiteFooter() {
             <p className="text-xs leading-relaxed text-slate-500">{DISCLAIMER}</p>
           </div>
         </div>
-        <p className="mt-8 border-t border-white/10 pt-6 text-center text-xs text-slate-500">
+        <div className="mt-8 border-t border-white/10 pt-6 text-center text-xs text-slate-500">
           © {new Date().getFullYear()} SVIP Gems Guide — Informational content for Pakistan users.
-          <span className="mt-2 block">
-            <LastUpdated />
-          </span>
-        </p>
+          <LastUpdated className="mt-2" />
+        </div>
       </div>
     </footer>
   );
