@@ -1,4 +1,4 @@
-import { DOWNLOAD_URL } from "@/lib/site-config";
+import { AFFILIATE_LINK_REL, DOWNLOAD_URL } from "@/lib/site-config";
 
 type DownloadButtonProps = {
   className?: string;
@@ -20,7 +20,7 @@ export function DownloadButton({
     <a
       href={DOWNLOAD_URL}
       target="_blank"
-      rel="noopener noreferrer"
+      rel={AFFILIATE_LINK_REL}
       className={`inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 font-semibold text-slate-900 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-400 ${sizeClasses} ${className}`}
       aria-label="Download SVIP Gems Game APK"
     >

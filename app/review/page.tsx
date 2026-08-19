@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FaqAccordion } from "@/components/svipgems/FaqAccordion";
+import { FaqDetails } from "@/components/svipgems/FaqDetails";
 import { GuidePageLayout } from "@/components/svipgems/GuidePageLayout";
 import { SubSectionHeading } from "@/components/svipgems/SubSectionHeading";
 import { REVIEW_PAGE } from "@/lib/svipgems/page-content";
@@ -136,7 +136,7 @@ export default function ReviewPage() {
           Review FAQ
         </h2>
         <div className="mt-6">
-          <FaqAccordion faqs={REVIEW_PAGE.faqs} />
+          <FaqDetails faqs={REVIEW_PAGE.faqs} />
         </div>
       </section>
     </GuidePageLayout>

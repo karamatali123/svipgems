@@ -1,6 +1,5 @@
 import {
   DEPOSIT_TABLE,
-  DEPOSIT_WITHDRAW_INTRO,
   DEVICE_REQUIREMENTS_TABLE,
   DOWNLOADING_TABLE,
   DOWNLOAD_INTRO,
@@ -87,37 +86,97 @@ export const LOGIN_PAGE = {
 export const WITHDRAWAL_PAGE = {
   title: "SVIP Gems Withdrawal Guide – Easypaisa & JazzCash (2026)",
   description:
-    "SVIP Gems deposit and withdrawal guide for Pakistan. Easypaisa and JazzCash steps, minimum limits, processing times, and delay fixes.",
+    "How to withdraw from SVIP Gems to Easypaisa or JazzCash in Pakistan. Minimum PKR 200+, typical processing 10–30 minutes, failure fixes, and fees.",
   intro: [
-    DEPOSIT_WITHDRAW_INTRO,
-    "This page explains wallet deposits and cash-outs in detail. Minimum deposit is typically PKR 100–500; minimum withdrawal is usually PKR 200 or more.",
+    "SVIP Gems withdrawals send winnings back to the Easypaisa or JazzCash number on your profile. Minimum withdrawal is typically PKR 200 or more. Processing usually takes 10–30 minutes after account verification — first cash-outs may take longer.",
+    "For deposit steps see our deposit guide. This page covers withdrawal only: limits, timing, failure reasons, and how to contact support.",
   ],
-  depositSteps: DEPOSIT_TABLE,
   withdrawSteps: WITHDRAW_TABLE,
   withdrawIntro: WITHDRAW_INTRO,
-  paymentComparison: [
-    { method: "Easypaisa", deposit: "Merchant transfer", withdrawal: "To Easypaisa account", time: "10–30 min" },
-    { method: "JazzCash", deposit: "Merchant transfer", withdrawal: "To JazzCash account", time: "10–30 min" },
+  limitsTable: [
+    { label: "Minimum withdrawal", value: "PKR 200+ (check in-app for exact limit)" },
+    { label: "Typical processing time", value: "10–30 minutes after verification" },
+    { label: "First withdrawal", value: "May require extra KYC — allow up to 2 hours" },
+    { label: "Payment methods", value: "Easypaisa, JazzCash" },
+    { label: "Fees observed", value: "No fee observed in August 2026 testing" },
+  ],
+  failureReasons: [
+    { issue: "Wrong wallet number", fix: "Confirm digits match your registered Easypaisa/JazzCash account name and number before submitting." },
+    { issue: "First-time verification", fix: "Complete any KYC prompts in-app. First withdrawal often takes longer than repeat cash-outs." },
+    { issue: "Peak hours / weekends", fix: "Wait 30–60 minutes. Contact in-app support with transaction ID if still pending." },
+    { issue: "Bonus wagering not met", fix: "Check promotions tab — some bonus balances require play-through before withdrawal." },
+    { issue: "Account name mismatch", fix: "Wallet holder name must match profile. Update profile or use the wallet registered to your SIM." },
   ],
   faqs: [
     {
       question: "What is the minimum withdrawal on SVIP Gems?",
-      answer: "Typically PKR 200 or more. Check the withdraw screen in your app for the exact limit.",
+      answer:
+        "The minimum SVIP Gems withdrawal is typically PKR 200 or more. Check the withdraw screen in your app for the exact limit before submitting.",
     },
     {
-      question: "How long does Easypaisa withdrawal take?",
+      question: "How long does SVIP Gems withdrawal take?",
       answer:
-        "Usually 10–30 minutes after verification. First cash-outs or weekend requests may take longer.",
+        "Easypaisa and JazzCash withdrawals usually process in 10 to 30 minutes after verification. First cash-outs or large amounts may take longer.",
     },
     {
-      question: "My deposit is not showing — what should I do?",
+      question: "Can I withdraw via Easypaisa?",
       answer:
-        "Wait 10–15 minutes, refresh your balance, then contact support with transaction ID and screenshot. Do not pay twice.",
+        "Yes. Open Wallet → Withdraw → Easypaisa, enter an amount above the minimum, and submit. Payouts typically land in 10–30 minutes.",
     },
     {
-      question: "Why is my withdrawal delayed?",
+      question: "Why is my SVIP Gems withdrawal delayed?",
       answer:
-        "Common causes: first-time verification, wrong wallet number, or peak traffic. Contact in-app support with proof.",
+        "Common causes include first-time verification, wrong wallet number, or peak traffic. Contact support with your transaction ID and screenshot.",
+    },
+    {
+      question: "Does SVIP Gems support JazzCash withdrawal?",
+      answer:
+        "Yes. Enter your JazzCash number in the withdraw section. Confirm digits match your registered name. First cash-out may need verification.",
+    },
+  ],
+} as const;
+
+export const DEPOSIT_PAGE = {
+  title: "SVIP Gems Minimum Deposit – Easypaisa & JazzCash Guide (2026)",
+  description:
+    "SVIP Gems deposit guide for Pakistan. Minimum PKR 100–500, Easypaisa and JazzCash steps, merchant transfer tips, and deposit-not-credited fixes.",
+  intro: [
+    "Adding money to SVIP Gems starts in the Wallet → Deposit section. Minimum deposit is typically PKR 100 to PKR 500 depending on promotions. Deposits through Easypaisa and JazzCash usually credit within a few minutes.",
+    "Always verify the merchant number shown in the app before sending. Save your transaction screenshot until your balance updates.",
+  ],
+  depositSteps: DEPOSIT_TABLE,
+  limitsTable: [
+    { label: "Minimum deposit", value: "PKR 100–500 (varies by promotion)" },
+    { label: "Typical credit time", value: "2–15 minutes" },
+    { label: "Payment methods", value: "Easypaisa, JazzCash" },
+    { label: "Proof required", value: "Screenshot or transaction ID if balance does not update" },
+  ],
+  failureReasons: [
+    { issue: "Sent to wrong merchant number", fix: "Double-check digits in the app before transferring. Do not send twice — contact support first." },
+    { issue: "Balance not updated after 15 min", fix: "Refresh wallet, then contact support with transaction ID and screenshot." },
+    { issue: "Amount below minimum", fix: "Check deposit screen for current minimum — often PKR 100 or higher." },
+    { issue: "Wrong wallet app used", fix: "Send from the same Easypaisa/JazzCash account registered on your profile." },
+  ],
+  faqs: [
+    {
+      question: "What is the minimum deposit on SVIP Gems?",
+      answer:
+        "Most builds allow deposits from PKR 100 to PKR 500 depending on promotions. Check the wallet deposit screen for the exact limit.",
+    },
+    {
+      question: "Does SVIP Gems support JazzCash deposits?",
+      answer:
+        "Yes. Transfer to the merchant number shown in the deposit section and double-check every digit before sending.",
+    },
+    {
+      question: "My deposit is not credited — what should I do?",
+      answer:
+        "Wait 10–15 minutes, refresh your balance, then contact support with transaction ID and screenshot. Do not send a second payment.",
+    },
+    {
+      question: "How long does a SVIP Gems deposit take?",
+      answer:
+        "Easypaisa and JazzCash deposits usually credit within 2 to 15 minutes. Peak times may take slightly longer.",
     },
   ],
 } as const;

@@ -8,6 +8,8 @@ import { CANONICAL_URL, DOWNLOAD_URL, SITE_CONFIG } from "@/lib/site-config";
 import { getSchemaScreenshots, OG_IMAGE } from "@/lib/svipgems/images";
 import { SITE_METADATA } from "@/lib/svipgems/metadata";
 
+const HOMEPAGE_FAQS = ARTICLE_FAQS.slice(0, 10);
+
 const PAGE_ID = `${SITE_CONFIG.url}/#webpage`;
 const ORG_ID = `${SITE_CONFIG.url}/#organization`;
 
@@ -51,7 +53,11 @@ export function getArticleSchema() {
     image: getImageObject(),
     datePublished: SITE_CONFIG.datePublished,
     dateModified: SITE_CONFIG.dateModified,
-    author: { "@id": ORG_ID },
+    author: {
+      "@type": "Person",
+      name: SITE_CONFIG.author.name,
+      url: `${SITE_CONFIG.url}/about`,
+    },
     publisher: { "@id": ORG_ID },
     mainEntityOfPage: { "@id": PAGE_ID },
     inLanguage: SITE_CONFIG.locale,
@@ -121,7 +127,7 @@ export function getFaqPageSchema() {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `${CANONICAL_URL}#faq`,
-    mainEntity: ARTICLE_FAQS.map((faq) => ({
+    mainEntity: HOMEPAGE_FAQS.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -142,6 +148,13 @@ export function getOrganizationSchema() {
     url: SITE_CONFIG.url,
     logo: getImageObject(),
     description: SITE_CONFIG.description,
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: SITE_CONFIG.contactEmail,
+      contactType: "customer support",
+      areaServed: "PK",
+      availableLanguage: ["English", "Urdu"],
+    },
     areaServed: {
       "@type": "Country",
       name: "Pakistan",

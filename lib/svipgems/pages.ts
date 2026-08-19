@@ -12,10 +12,16 @@ export const GUIDE_PAGES = [
     description: "How to register and log in to SVIP Gems with OTP verification in Pakistan.",
   },
   {
+    path: "/deposit",
+    label: "Deposit Guide",
+    shortLabel: "Deposit",
+    description: "Minimum deposit limits, Easypaisa and JazzCash funding steps for SVIP Gems.",
+  },
+  {
     path: "/withdrawal",
-    label: "Deposit & Withdrawal",
+    label: "Withdrawal Guide",
     shortLabel: "Withdrawal",
-    description: "Easypaisa and JazzCash deposit and withdrawal guide for SVIP Gems users.",
+    description: "Easypaisa and JazzCash withdrawal steps, limits, and timing for SVIP Gems.",
   },
   {
     path: "/review",
@@ -25,7 +31,22 @@ export const GUIDE_PAGES = [
   },
 ] as const;
 
+export const TRUST_PAGES = [
+  { path: "/about", label: "About Us" },
+  { path: "/contact", label: "Contact" },
+  { path: "/privacy-policy", label: "Privacy Policy" },
+  { path: "/terms", label: "Terms of Use" },
+] as const;
+
 export type GuidePagePath = (typeof GUIDE_PAGES)[number]["path"];
+
+export type TrustPagePath = (typeof TRUST_PAGES)[number]["path"];
+
+export const ALL_INDEXABLE_PATHS = [
+  "/",
+  ...GUIDE_PAGES.map((p) => p.path),
+  ...TRUST_PAGES.map((p) => p.path),
+] as const;
 
 export function getGuidePage(path: GuidePagePath) {
   return GUIDE_PAGES.find((page) => page.path === path);

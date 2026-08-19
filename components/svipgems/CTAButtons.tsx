@@ -1,5 +1,5 @@
 import { DownloadButton } from "@/components/svipgems/DownloadButton";
-import { DOWNLOAD_URL } from "@/lib/site-config";
+import { AFFILIATE_LINK_REL, DOWNLOAD_URL } from "@/lib/site-config";
 
 type CTAButtonsProps = {
   className?: string;
@@ -18,7 +18,7 @@ export function CTAButtons({ className = "", size = "default" }: CTAButtonsProps
       <a
         href={DOWNLOAD_URL}
         target="_blank"
-        rel="noopener noreferrer"
+        rel={AFFILIATE_LINK_REL}
         className={`inline-flex items-center justify-center rounded-xl border border-violet-400/40 bg-violet-500/10 font-semibold text-violet-200 transition hover:border-violet-300/60 hover:bg-violet-500/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-400 ${sizeClasses}`}
         aria-label="SVIP Gems login and registration"
       >

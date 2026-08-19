@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FaqAccordion } from "@/components/svipgems/FaqAccordion";
+import { FaqDetails } from "@/components/svipgems/FaqDetails";
 import { GuidePageLayout } from "@/components/svipgems/GuidePageLayout";
 import { SubSectionHeading } from "@/components/svipgems/SubSectionHeading";
 import { LOGIN_PAGE } from "@/lib/svipgems/page-content";
@@ -74,7 +74,7 @@ export default function LoginPage() {
           Login & Registration FAQ
         </h2>
         <div className="mt-6">
-          <FaqAccordion faqs={LOGIN_PAGE.faqs} />
+          <FaqDetails faqs={LOGIN_PAGE.faqs} />
         </div>
       </section>
     </GuidePageLayout>

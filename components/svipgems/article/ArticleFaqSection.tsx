@@ -1,6 +1,9 @@
 import { ARTICLE_FAQS } from "@/lib/svipgems/article-content";
-import { FaqAccordion } from "@/components/svipgems/FaqAccordion";
+import { FaqDetails } from "@/components/svipgems/FaqDetails";
 import { SectionHeading } from "@/components/svipgems/SectionHeading";
+
+/** Top 10 FAQs on homepage */
+export const HOMEPAGE_FAQS = ARTICLE_FAQS.slice(0, 10);
 
 export function ArticleFaqSection() {
   return (
@@ -11,7 +14,7 @@ export function ArticleFaqSection() {
           title="SVIP Gems Frequently Asked Questions"
           subtitle="Answers to the most common questions about download, login, payments, bonuses, and support."
         />
-        <FaqAccordion faqs={ARTICLE_FAQS} />
+        <FaqDetails faqs={HOMEPAGE_FAQS} />
       </div>
     </section>
   );

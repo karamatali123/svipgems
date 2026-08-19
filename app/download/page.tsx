@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { DownloadButton } from "@/components/svipgems/DownloadButton";
-import { FaqAccordion } from "@/components/svipgems/FaqAccordion";
+import { FaqDetails } from "@/components/svipgems/FaqDetails";
 import { GuidePageLayout } from "@/components/svipgems/GuidePageLayout";
 import { SubSectionHeading } from "@/components/svipgems/SubSectionHeading";
 import { ArticleTable } from "@/components/svipgems/article/ArticleTable";
@@ -47,6 +47,7 @@ export default function DownloadPage() {
       description={DOWNLOAD_PAGE.description}
       breadcrumbLabel="Download APK"
       schema={schema}
+      showPrimaryGuideLink
     >
       {DOWNLOAD_PAGE.intro.map((paragraph) => (
         <p key={paragraph.slice(0, 40)} className="mb-4 text-base leading-relaxed text-slate-300">
@@ -78,7 +79,7 @@ export default function DownloadPage() {
           Download FAQ
         </h2>
         <div className="mt-6">
-          <FaqAccordion faqs={DOWNLOAD_PAGE.faqs} />
+          <FaqDetails faqs={DOWNLOAD_PAGE.faqs} />
         </div>
       </section>
     </GuidePageLayout>

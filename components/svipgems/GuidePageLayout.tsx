@@ -1,9 +1,9 @@
-import Script from "next/script";
 import type { ReactNode } from "react";
 import { Breadcrumbs } from "@/components/svipgems/Breadcrumbs";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
 import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { LastUpdated } from "@/components/svipgems/LastUpdated";
+import { PrimaryGuideBanner } from "@/components/svipgems/PrimaryGuideBanner";
 import { RelatedGuides } from "@/components/svipgems/RelatedGuides";
 import { SiteFooter } from "@/components/svipgems/SiteFooter";
 import { SiteHeader } from "@/components/svipgems/SiteHeader";
@@ -17,6 +17,8 @@ type GuidePageLayoutProps = {
   breadcrumbLabel: string;
   schema: ReturnType<typeof getGuidePageSchema>;
   children: ReactNode;
+  /** Show top banner linking to homepage — use on /download to reduce cannibalization */
+  showPrimaryGuideLink?: boolean;
 };
 
 export function GuidePageLayout({
@@ -26,16 +28,16 @@ export function GuidePageLayout({
   breadcrumbLabel,
   schema,
   children,
+  showPrimaryGuideLink = false,
 }: GuidePageLayoutProps) {
   return (
     <div className="min-h-full bg-slate-950 text-slate-100">
-      <Script
-        id={`schema-${path.replace(/\//g, "")}`}
+      <script
         type="application/ld+json"
-        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <SiteHeader />
+      {showPrimaryGuideLink && <PrimaryGuideBanner />}
       <main id="main-content">
         <article
           itemScope

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { AffiliateDisclosure } from "@/components/svipgems/AffiliateDisclosure";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
 import { TRUST_BADGES } from "@/lib/svipgems/content";
 import { HERO_INTRO } from "@/lib/svipgems/article-content";
@@ -26,8 +27,9 @@ export function HeroSection() {
           <p className="mt-5 text-base leading-relaxed text-slate-300 md:text-lg">
             {HERO_INTRO}
           </p>
+          <AffiliateDisclosure />
           <LastUpdated className="mt-4" />
-          <CTAButtons className="mt-8" size="large" />
+          <CTAButtons className="mt-6" size="large" />
           <ul
             className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3"
             aria-label="Trust badges"

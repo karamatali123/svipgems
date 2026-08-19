@@ -1,28 +1,22 @@
 import { AdditionalFeaturesSection } from "@/components/svipgems/article/AdditionalFeaturesSection";
 import { ArticleConclusionSection } from "@/components/svipgems/article/ArticleConclusionSection";
 import { ArticleFaqSection } from "@/components/svipgems/article/ArticleFaqSection";
-import { DepositWithdrawArticleSection } from "@/components/svipgems/article/DepositWithdrawArticleSection";
-import { DownloadInstallSection } from "@/components/svipgems/article/DownloadInstallSection";
 import { KeyFeaturesSection } from "@/components/svipgems/article/KeyFeaturesSection";
 import { OverviewIntroductionSection } from "@/components/svipgems/article/OverviewIntroductionSection";
 import { PopularGamesArticleSection } from "@/components/svipgems/article/PopularGamesArticleSection";
 import { ProsConsSection } from "@/components/svipgems/article/ProsConsSection";
-import { ReferralProgramSection } from "@/components/svipgems/article/ReferralProgramSection";
-import { RegistrationLoginSection } from "@/components/svipgems/article/RegistrationLoginSection";
 import { SafeLegalSection } from "@/components/svipgems/article/SafeLegalSection";
 import { WhatIsGameSection } from "@/components/svipgems/article/WhatIsGameSection";
 import { WhyChooseSection } from "@/components/svipgems/article/WhyChooseSection";
-import { BonusesSection } from "@/components/svipgems/BonusesSection";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
 import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { HeroSection } from "@/components/svipgems/HeroSection";
-import { GuideHubSection } from "@/components/svipgems/GuideHubSection";
 import { HowItWorksSection } from "@/components/svipgems/HowItWorksSection";
 import { QuickInfoTable } from "@/components/svipgems/QuickInfoTable";
-import { RealOrFakeSection } from "@/components/svipgems/RealOrFakeSection";
 import { ScreenshotsSection } from "@/components/svipgems/ScreenshotsSection";
 import { SiteFooter } from "@/components/svipgems/SiteFooter";
 import { SiteHeader } from "@/components/svipgems/SiteHeader";
+import { SpokeSummariesSection } from "@/components/svipgems/SpokeSummariesSection";
 import { TableOfContentsAccordion } from "@/components/svipgems/TableOfContentsAccordion";
 import { UserReviewsSection } from "@/components/svipgems/UserReviewsSection";
 import { homePageMetadata } from "@/lib/svipgems/metadata";
@@ -39,21 +33,15 @@ export default function HomePage() {
           <HeroSection />
           <TableOfContentsAccordion />
           <OverviewIntroductionSection />
-          <GuideHubSection />
           <QuickInfoTable />
           <WhatIsGameSection />
           <HowItWorksSection />
-          <DownloadInstallSection />
-          <RegistrationLoginSection />
-          <DepositWithdrawArticleSection />
+          <SpokeSummariesSection />
           <KeyFeaturesSection />
           <AdditionalFeaturesSection />
           <PopularGamesArticleSection />
-          <BonusesSection />
-          <ReferralProgramSection />
           <ScreenshotsSection />
           <WhyChooseSection />
-          <RealOrFakeSection />
           <UserReviewsSection />
           <SafeLegalSection />
           <ProsConsSection />
