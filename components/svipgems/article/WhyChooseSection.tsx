@@ -11,7 +11,7 @@ export function WhyChooseSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="why-choose-heading"
-          title="Why Choose SVIP Gems in Pakistan?"
+          title="Why More Players in Pakistan Choose SVIP Gems – Safe, Fair, and Full of Rewards"
           subtitle="Reasons the app is popular among Pakistan Android users — and what to watch out for."
         />
         <ArticleProse paragraphs={WHY_CHOOSE} />

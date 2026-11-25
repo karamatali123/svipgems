@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
     "Complete Pakistan guide for SVIP Gems download APK, login, Easypaisa & JazzCash withdrawal, bonuses, and honest reviews for 2026.",
   locale: "en-PK",
   datePublished: "2026-01-15",
-  dateModified: "2026-08-19",
+  dateModified: "2026-11-25",
   contactEmail: "support@svipgems.com.pk",
   author: {
     name: "Ali Hassan",
@@ -33,7 +33,7 @@ export const DOWNLOAD_URL =
 
 /** Per-page lastmod for sitemap — update when a page is edited */
 export const PAGE_LAST_MODIFIED: Record<string, string> = {
-  "/": "2026-08-19",
+  "/": "2026-11-25",
   "/download": "2026-08-19",
   "/login": "2026-08-19",
   "/deposit": "2026-08-19",

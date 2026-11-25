@@ -1,14 +1,16 @@
 import { AdditionalFeaturesSection } from "@/components/svipgems/article/AdditionalFeaturesSection";
 import { ArticleConclusionSection } from "@/components/svipgems/article/ArticleConclusionSection";
 import { ArticleFaqSection } from "@/components/svipgems/article/ArticleFaqSection";
-import { KeyFeaturesSection } from "@/components/svipgems/article/KeyFeaturesSection";
+import { CustomerSupportSection } from "@/components/svipgems/article/CustomerSupportSection";
 import { OverviewIntroductionSection } from "@/components/svipgems/article/OverviewIntroductionSection";
 import { PopularGamesArticleSection } from "@/components/svipgems/article/PopularGamesArticleSection";
 import { ProsConsSection } from "@/components/svipgems/article/ProsConsSection";
 import { SafeLegalSection } from "@/components/svipgems/article/SafeLegalSection";
 import { WhatIsGameSection } from "@/components/svipgems/article/WhatIsGameSection";
 import { WhyChooseSection } from "@/components/svipgems/article/WhyChooseSection";
+import { BonusesSection } from "@/components/svipgems/BonusesSection";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
+import { DepositWithdrawalSection } from "@/components/svipgems/DepositWithdrawalSection";
 import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { HeroSection } from "@/components/svipgems/HeroSection";
 import { HowItWorksSection } from "@/components/svipgems/HowItWorksSection";
@@ -37,11 +39,13 @@ export default function HomePage() {
           <WhatIsGameSection />
           <HowItWorksSection />
           <SpokeSummariesSection />
-          <KeyFeaturesSection />
-          <AdditionalFeaturesSection />
           <PopularGamesArticleSection />
+          <BonusesSection />
+          <DepositWithdrawalSection />
+          <AdditionalFeaturesSection />
           <ScreenshotsSection />
           <WhyChooseSection />
+          <CustomerSupportSection />
           <UserReviewsSection />
           <SafeLegalSection />
           <ProsConsSection />

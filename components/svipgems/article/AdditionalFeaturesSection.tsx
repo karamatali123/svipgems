@@ -10,8 +10,8 @@ export function AdditionalFeaturesSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="additional-features-heading"
-          title="Additional SVIP Gems Features"
-          subtitle="Extra tools and perks available inside the app beyond the core game lobby."
+          title="Play Easily on Any Device – PC, Mobile, or Tablet with a Simple and Fast Website in Pakistan"
+          subtitle="Use SVIP Gems on Android phones, tablets, and the fast Pakistan website — plus extra in-app tools beyond the core lobby."
         />
         <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {ADDITIONAL_FEATURES.map((feature) => (

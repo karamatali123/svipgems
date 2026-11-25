@@ -11,7 +11,7 @@ export function BonusesSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="bonuses-heading"
-          title="SVIP Gems Bonus System 2026"
+          title="Big Welcome Bonuses and Special Promotions to Make Your Gaming Experience More Fun and Rewarding"
           subtitle="Welcome offers, referral commissions, daily rewards, and VIP tiers."
         />
         <div className="grid gap-5 sm:grid-cols-2">

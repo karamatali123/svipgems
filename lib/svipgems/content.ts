@@ -288,7 +288,7 @@ export const RELATED_LINKS = [
   { href: "/#reviews-heading", label: "SVIP Gems User Reviews", description: "Pakistan user feedback by region." },
   { href: "/#faq", label: "FAQ", description: "Common questions answered." },
   { href: "/#games", label: "Games List", description: "All available titles." },
-  { href: "/#features", label: "Features", description: "Payments, bonuses, support." },
+  { href: "/#additional-features-heading", label: "Play on Any Device", description: "Mobile, tablet, and fast Pakistan site access." },
 ] as const;
 
 export const FAQS = [

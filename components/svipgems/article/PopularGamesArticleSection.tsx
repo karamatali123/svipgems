@@ -8,7 +8,7 @@ export function PopularGamesArticleSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="popular-games-heading"
-          title="Popular Games on SVIP Gems"
+          title="A Wide Choice of Casino Games in Pakistan – Slots, Table Games, Live Casino, and Poker Tournaments"
           subtitle="Slots, lottery, sports, and casino games available in the SVIP Gems lobby."
         />
         <ArticleProse paragraphs={[POPULAR_GAMES_INTRO]} className="mb-10" />

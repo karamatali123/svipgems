@@ -12,7 +12,7 @@ export function ArticleConclusionSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="conclusion-heading"
-          title="Conclusion"
+          title="Why SVIP Gems Is the Best Online Casino for Pakistani Players"
           subtitle="Final thoughts on whether SVIP Gems is worth trying in Pakistan."
         />
         <ArticleProse paragraphs={CONCLUSION} />

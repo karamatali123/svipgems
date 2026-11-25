@@ -11,7 +11,7 @@ export function DepositWithdrawalSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="withdrawal-heading"
-          title="SVIP Gems Deposit & Withdrawal System"
+          title="Fast and Secure Payments with Multiple Options for Pakistani Players – Deposits and Withdrawals Made Easy"
           subtitle="Easypaisa, JazzCash, and bank options — processing times, verification, and common delays."
         />
         <p className="mb-8 text-base text-slate-300 md:text-lg">

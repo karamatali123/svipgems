@@ -12,7 +12,7 @@ export function SafeLegalSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeading
           id="safe-legal-heading"
-          title="Is SVIP Gems Safe and Legal?"
+          title="Why SVIP Gems Casino Is the Most Trusted Online Casino in Pakistan for Safe Gaming, Fast Withdrawals, and Fair Play"
           subtitle="Security practices, legal status in Pakistan, and what protections exist for players."
         />
         <ArticleProse paragraphs={[SAFE_LEGAL_INTRO]} className="mb-6" />

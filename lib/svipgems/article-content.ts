@@ -4,8 +4,8 @@ export const GUIDE_OVERVIEW = [
 ] as const;
 
 export const WHAT_IS = [
-  "SVIP Gems is a mobile gaming APK that combines color prediction, slot machines, lottery rounds, and casino-style card games in one Android app. It is distributed outside the Google Play Store, which means you install it manually by downloading an APK file. After registration, you add funds via Easypaisa or JazzCash, play games from the lobby, and request withdrawals when your balance exceeds the minimum limit.",
-  "The app targets Pakistan users with local payment methods, Urdu and English menus, and low minimum deposits starting from PKR 100. It also offers referral commissions, welcome bonuses, daily login rewards, and VIP tiers for frequent players. SVIP Gems is not regulated by SECP or any government gaming authority — treat it as paid entertainment, not a salary replacement.",
+  "SVIP Gems is a mobile gaming APK that combines color prediction, slot machines, lottery rounds, and casino-style card games in one Android app. It is distributed outside the Google Play Store, so you install it manually from a verified APK link rather than Play Store.",
+  "After registration you fund a wallet, play from the lobby, and cash out when your balance clears the minimum limit. The app is not regulated by SECP or any government gaming authority — treat it as paid entertainment, not a salary replacement.",
 ] as const;
 
 export const REGISTRATION_LOGIN_INTRO =
@@ -75,26 +75,18 @@ export const KEY_FEATURES = [
 ] as const;
 
 export const ADDITIONAL_FEATURES = [
-  "Daily login rewards",
-  "Spin wheel bonuses",
-  "Festival Eid promotions",
-  "Weekend deposit cashback",
-  "Color prediction rounds",
-  "Live game timers",
-  "Transaction history export",
-  "OTP-secured withdrawals",
-  "Low PKR 100 entry deposits",
-  "JazzCash merchant payments",
-  "Easypaisa direct transfer",
-  "In-app notification alerts",
-  "Profile photo upload",
-  "Game favorites list",
-  "Quick rebet buttons",
-  "Session time reminders",
-  "Leaderboard events",
+  "Android APK + mobile web access",
+  "Works on phones and tablets",
+  "Fast loading on 4G and Wi-Fi",
   "Mobile data optimization",
   "Night mode interface",
+  "Live game timers",
+  "Game favorites list",
+  "Quick rebet buttons",
+  "In-app notification alerts",
   "One-tap wallet refresh",
+  "Transaction history export",
+  "Session time reminders",
 ] as const;
 
 export const POPULAR_GAMES_INTRO =
@@ -199,8 +191,8 @@ export const WITHDRAW_TABLE = [
 ] as const;
 
 export const WHY_CHOOSE = [
-  "SVIP Gems is popular in Pakistan because it combines mobile wallet payments, a wide game library, and low entry deposits in one Android app. Users in Karachi, Lahore, Islamabad, and smaller cities can deposit as little as PKR 100 through Easypaisa or JazzCash without needing a bank card. The app bundles slots, lottery, sports, and casino games together, so you do not need multiple earning apps. Referral commissions and festival bonuses add extra value for active users who read the promotion terms carefully.",
-  "However, SVIP Gems is a real-money gaming platform — not a guaranteed income source. Withdrawal speeds vary by time of day and account status. First-time cash-outs may require extra verification. We recommend starting with a small test deposit, observing how withdrawals work, and only continuing if you are comfortable with the financial risk involved.",
+  "More Pakistan players stick with SVIP Gems because local wallets, low entry deposits, and one lobby for slots, lottery, sports, and casino games remove the need for multiple earning apps. Karachi, Lahore, Islamabad, and smaller cities can start from about PKR 100 without a bank card.",
+  "That convenience does not remove risk. Withdrawal speed depends on verification and traffic, and first cash-outs can take longer. Start with a small test deposit, confirm payouts on your account, then decide if the platform fits your budget.",
 ] as const;
 
 export const REFERRAL_INTRO = [
@@ -232,6 +224,11 @@ export const REFERRAL_STEPS = [
   },
 ] as const;
 
+export const CUSTOMER_SUPPORT = [
+  "SVIP Gems customer support is available around the clock through in-app chat, Telegram, and WhatsApp so Pakistan players can get help with login, deposits, withdrawals, and bonus questions. Most routine issues — such as a delayed JazzCash credit or a forgotten password — are resolved once you share your registered mobile number and transaction ID.",
+  "Response times are usually minutes during quiet hours and can stretch longer on weekends or festival peaks. Keep payment screenshots ready before you contact support, and never share your OTP with anyone claiming to be an agent. Official channels stay inside the app or on verified contact links from this site.",
+] as const;
+
 export const SAFE_LEGAL_INTRO =
   "SVIP Gems operates as a real-money gaming app used widely in Pakistan, but it is not licensed by SECP or any official gambling regulator. Play only with money you can lose, and verify download sources before installing.";
 
@@ -241,7 +238,6 @@ export const SAFE_LEGAL_POINTS = [
   "Withdrawals generally work, yet delays happen during verification or peak hours.",
   "No government body guarantees player protection on prediction platforms.",
   "Users must be 18+ and responsible for their own tax and legal compliance.",
-  "Customer support exists, but response quality varies by issue and time of day.",
 ] as const;
 
 export const PROS = [
@@ -261,8 +257,8 @@ export const CONS = [
 ] as const;
 
 export const CONCLUSION = [
-  "SVIP Gems remains one of the most downloaded earning apps in Pakistan because it combines Easypaisa and JazzCash payments, a diverse game lobby, and a straightforward APK installation process. You can download the app, register with OTP, deposit funds, and start playing within minutes. Referral bonuses and VIP rewards provide additional earning options for users who understand the terms and risks involved.",
-  "Before you commit larger amounts, test the platform with a small deposit and verify that withdrawals work on your account. Use only official download links, protect your OTP and password, and never chase losses. SVIP Gems can provide entertainment — it cannot replace a stable income. Play responsibly and only use money you can afford to lose.",
+  "If you want a Pakistan-focused online casino with local wallets, a broad lobby, and clear APK setup, SVIP Gems is a strong option to try carefully. Use the guides on this page for download, login, deposits, and withdrawals before you scale up.",
+  "Start small, confirm your first cash-out works, protect your OTP, and treat every session as paid entertainment — not income. Play only with money you can afford to lose.",
 ] as const;
 
 export const ARTICLE_FAQS = [
