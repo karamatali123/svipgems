@@ -29,7 +29,7 @@ export const AFFILIATE_LINK_REL = "noopener noreferrer sponsored nofollow";
 export const CANONICAL_URL = `${SITE_CONFIG.url}/`;
 
 export const DOWNLOAD_URL =
-  "https://share1SvipGems.net?pid=457517832&channel=2028066&pkg=com.svipgems066.app";
+  "https://share1svipgems.net/?pid=457517832&channel=2028046&pkg=com.svipgems046.app";
 
 /** Per-page lastmod for sitemap — update when a page is edited */
 export const PAGE_LAST_MODIFIED: Record<string, string> = {
