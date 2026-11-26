@@ -289,6 +289,8 @@ export const RELATED_LINKS = [
   { href: "/#faq", label: "FAQ", description: "Common questions answered." },
   { href: "/#games", label: "Games List", description: "All available titles." },
   { href: "/#additional-features-heading", label: "Play on Any Device", description: "Mobile, tablet, and fast Pakistan site access." },
+  { href: "/svip-club", label: "SVIP Club Casino", description: "Official SVIP Club Pakistan guide from svip-club.com." },
+  { href: "/svip-slot", label: "SVIP Slot Game", description: "SVIP Slot APK, JazzCash QR deposits, and Easypaisa cash-outs." },
 ] as const;
 
 export const FAQS = [

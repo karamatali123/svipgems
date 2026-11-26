@@ -31,6 +31,27 @@ export const GUIDE_PAGES = [
   },
 ] as const;
 
+export const RELATED_GAME_PAGES = [
+  {
+    path: "/svip-club",
+    label: "SVIP Club Casino",
+    shortLabel: "SVIP Club",
+    description: "Official SVIP Club Pakistan guide: app download, login, EasyPaisa, JazzCash, and bonuses.",
+  },
+  {
+    path: "/svip-slot",
+    label: "SVIP Slot Game",
+    shortLabel: "SVIP Slot",
+    description: "SVIP Slot Pakistan guide: APK install, JazzCash and Easypaisa deposits, and cash-outs.",
+  },
+] as const;
+
+export const SVIP_GAME_PAGES = [
+  { path: "/", label: "SVIP Gems" },
+  { path: "/svip-club", label: "SVIP Club" },
+  { path: "/svip-slot", label: "SVIP Slot" },
+] as const;
+
 export const TRUST_PAGES = [
   { path: "/about", label: "About Us" },
   { path: "/contact", label: "Contact" },
@@ -44,6 +65,7 @@ export type TrustPagePath = (typeof TRUST_PAGES)[number]["path"];
 
 export const ALL_INDEXABLE_PATHS = [
   "/",
+  ...RELATED_GAME_PAGES.map((p) => p.path),
   ...GUIDE_PAGES.map((p) => p.path),
   ...TRUST_PAGES.map((p) => p.path),
 ] as const;

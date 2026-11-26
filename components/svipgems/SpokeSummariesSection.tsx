@@ -37,6 +37,20 @@ const SPOKE_SUMMARIES = [
       "SVIP Gems is a real-money app used widely in Pakistan but not government-regulated. Payouts work for most users; delays and losses are possible. Read our evidence-based verdict.",
     isDownloadSpoke: false,
   },
+  {
+    href: "/svip-club",
+    title: "SVIP Club Casino",
+    summary:
+      "Related brand on svip-club.com — slots, live casino, EasyPaisa and JazzCash, 500% welcome offer, plus Android and iOS app download.",
+    isDownloadSpoke: false,
+  },
+  {
+    href: "/svip-slot",
+    title: "SVIP Slot Game",
+    summary:
+      "Sister APK in the SVIP family — slot reels, multiplayer, JazzCash/Easypaisa wallet or QR top-ups, and reported PKR 100 cash-outs.",
+    isDownloadSpoke: false,
+  },
 ] as const;
 
 export function SpokeSummariesSection() {

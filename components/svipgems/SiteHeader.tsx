@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CTAButtons } from "@/components/svipgems/CTAButtons";
-import { GUIDE_PAGES } from "@/lib/svipgems/pages";
+import { GUIDE_PAGES, RELATED_GAME_PAGES } from "@/lib/svipgems/pages";
 
 export function SiteHeader() {
   return (
@@ -15,6 +15,15 @@ export function SiteHeader() {
         </Link>
         <nav aria-label="Primary navigation" className="hidden items-center gap-5 lg:flex">
           {GUIDE_PAGES.map((page) => (
+            <Link
+              key={page.path}
+              href={page.path}
+              className="text-sm text-slate-300 transition hover:text-white"
+            >
+              {page.shortLabel}
+            </Link>
+          ))}
+          {RELATED_GAME_PAGES.map((page) => (
             <Link
               key={page.path}
               href={page.path}

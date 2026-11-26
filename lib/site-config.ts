@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
     "Complete Pakistan guide for SVIP Gems download APK, login, Easypaisa & JazzCash withdrawal, bonuses, and honest reviews for 2026.",
   locale: "en-PK",
   datePublished: "2026-01-15",
-  dateModified: "2026-11-25",
+  dateModified: "2026-11-26",
   contactEmail: "support@svipgems.com.pk",
   author: {
     name: "Ali Hassan",
@@ -31,9 +31,21 @@ export const CANONICAL_URL = `${SITE_CONFIG.url}/`;
 export const DOWNLOAD_URL =
   "https://share1svipgems.net/?pid=457517832&channel=2028046&pkg=com.svipgems046.app";
 
+export const SVIP_CLUB_OFFICIAL_URL = "https://svip-club.com/";
+export const SVIP_CLUB_PLAY_URL =
+  "https://sharesvipclub.best?pid=530692717&channel=2026048&pkg=com.svipclub048.app";
+export const SVIP_CLUB_LOGIN_URL = "https://svip-club.com/svip-club-casino-login/";
+export const SVIP_CLUB_APP_DOWNLOAD_URL = "https://svip-club.com/app-download/";
+export const SVIP_CLUB_PROMOTIONS_URL = "https://svip-club.com/svip-club-casino-promotions/";
+
+/** Temporary: reuse Gems affiliate until a Slot-specific share URL is provided. */
+export const SVIP_SLOT_PLAY_URL = DOWNLOAD_URL;
+
 /** Per-page lastmod for sitemap — update when a page is edited */
 export const PAGE_LAST_MODIFIED: Record<string, string> = {
-  "/": "2026-11-25",
+  "/": "2026-11-26",
+  "/svip-club": "2026-11-26",
+  "/svip-slot": "2026-11-26",
   "/download": "2026-08-19",
   "/login": "2026-08-19",
   "/deposit": "2026-08-19",

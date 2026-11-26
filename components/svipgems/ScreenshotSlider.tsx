@@ -2,12 +2,20 @@
 
 import Image from "next/image";
 import { useCallback, useEffect, useId, useState } from "react";
-import { SCREENSHOTS } from "@/lib/svipgems/images";
+import { SCREENSHOTS, type SvipgemsImage } from "@/lib/svipgems/images";
 
-export function ScreenshotSlider() {
+type ScreenshotSliderProps = {
+  images?: readonly SvipgemsImage[];
+  label?: string;
+};
+
+export function ScreenshotSlider({
+  images = SCREENSHOTS,
+  label = "SVIP Gems app screenshots",
+}: ScreenshotSliderProps) {
   const baseId = useId();
   const [activeIndex, setActiveIndex] = useState(0);
-  const total = SCREENSHOTS.length;
+  const total = images.length;
 
   const goTo = useCallback(
     (index: number) => {
@@ -28,7 +36,7 @@ export function ScreenshotSlider() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [goPrev, goNext]);
 
-  const active = SCREENSHOTS[activeIndex];
+  const active = images[activeIndex];
   const displayWidth = Math.max(active.width * 3, 720);
   const displayHeight = Math.round(active.height * (displayWidth / active.width));
 
@@ -37,7 +45,7 @@ export function ScreenshotSlider() {
       <div
         className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/80"
         aria-roledescription="carousel"
-        aria-label="SVIP Gems app screenshots"
+        aria-label={label}
       >
         <figure className="relative flex min-h-[360px] flex-col items-center justify-center px-4 py-8 md:min-h-[520px] md:px-8 md:py-12">
           <div
@@ -84,7 +92,7 @@ export function ScreenshotSlider() {
           role="tablist"
           aria-label="Screenshot slides"
         >
-          {SCREENSHOTS.map((shot, index) => (
+          {images.map((shot, index) => (
             <button
               key={shot.src}
               type="button"
@@ -112,8 +120,15 @@ export function ScreenshotSlider() {
         </button>
       </div>
 
-      <ul className="mt-6 grid grid-cols-4 gap-3 sm:grid-cols-7" aria-label="Screenshot thumbnails">
-        {SCREENSHOTS.map((shot, index) => (
+      <ul
+        className={
+          total >= 7
+            ? "mt-6 grid grid-cols-4 gap-3 sm:grid-cols-7"
+            : "mt-6 grid grid-cols-3 gap-3 sm:grid-cols-6"
+        }
+        aria-label="Screenshot thumbnails"
+      >
+        {images.map((shot, index) => (
           <li key={shot.src}>
             <button
               type="button"
@@ -132,7 +147,7 @@ export function ScreenshotSlider() {
                 width={shot.width}
                 height={shot.height}
                 loading="lazy"
-                className="h-20 w-full object-cover object-center md:h-24"
+                className="h-20 w-full object-cover object-top md:h-24"
                 sizes="120px"
               />
             </button>

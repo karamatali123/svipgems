@@ -9,6 +9,7 @@ export const TABLE_OF_CONTENTS = [
   { href: "#withdrawal-heading", label: "Fast & Secure Payments" },
   { href: "#additional-features-heading", label: "Play on Any Device" },
   { href: "#screenshots-heading", label: "App Screenshots" },
+  { href: "#other-svip-games-heading", label: "Other SVIP Games" },
   { href: "#why-choose-heading", label: "Why More Players Choose SVIP Gems" },
   { href: "#customer-support-heading", label: "24/7 Customer Support" },
   { href: "#reviews-heading", label: "User Feedback" },

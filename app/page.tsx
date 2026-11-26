@@ -15,6 +15,7 @@ import { DisclaimerSection } from "@/components/svipgems/DisclaimerSection";
 import { HeroSection } from "@/components/svipgems/HeroSection";
 import { HowItWorksSection } from "@/components/svipgems/HowItWorksSection";
 import { QuickInfoTable } from "@/components/svipgems/QuickInfoTable";
+import { OtherSvipGamesSection } from "@/components/svipgems/OtherSvipGamesSection";
 import { ScreenshotsSection } from "@/components/svipgems/ScreenshotsSection";
 import { SiteFooter } from "@/components/svipgems/SiteFooter";
 import { SiteHeader } from "@/components/svipgems/SiteHeader";
@@ -44,6 +45,7 @@ export default function HomePage() {
           <DepositWithdrawalSection />
           <AdditionalFeaturesSection />
           <ScreenshotsSection />
+          <OtherSvipGamesSection currentPath="/" />
           <WhyChooseSection />
           <CustomerSupportSection />
           <UserReviewsSection />

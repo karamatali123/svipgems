@@ -3,7 +3,18 @@
 import { useId, useState } from "react";
 import { TABLE_OF_CONTENTS } from "@/lib/svipgems/toc";
 
-export function TableOfContentsAccordion() {
+type TocItem = {
+  href: string;
+  label: string;
+};
+
+type TableOfContentsAccordionProps = {
+  items?: readonly TocItem[];
+};
+
+export function TableOfContentsAccordion({
+  items = TABLE_OF_CONTENTS,
+}: TableOfContentsAccordionProps) {
   const baseId = useId();
   const [isOpen, setIsOpen] = useState(true);
   const buttonId = `${baseId}-toc-button`;
@@ -42,7 +53,7 @@ export function TableOfContentsAccordion() {
             className="border-t border-white/10"
           >
             <ol className="divide-y divide-white/10">
-              {TABLE_OF_CONTENTS.map((item, index) => (
+              {items.map((item, index) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
